@@ -54,12 +54,46 @@ public class JPhotoFrameTest {
         Thread.sleep(4500);
 
         secondFile = jPhotoFrame.show.panel.getPhoto().getFullOriginalName();
-        
+
         assertEquals(secondFile, files[1]);
 
         //System.out.println("filename: " + jPhotoFrame.show.panel.getPhoto().getFullOriginalName() );
 
     }
 
+
+    @Test
+    public void showsOtherImageAfterQuickInterval() throws Exception {
+
+
+        String files[]= new String[2];
+
+        files[0] = "/home/APE/ape11/JPhotoAlbum/web/JPhotoAlbum.jpg";
+        files[1] = "/home/APE/ape11/JPhotoAlbum/web/JPhotoAlbum2.jpg";
+
+        JPhotoFrame jPhotoFrame = new JPhotoFrame(null, files);
+        jPhotoFrame.actionPerformed(new ActionEvent(jPhotoFrame, 0, JPhotoMenu.A_QUICK_SLIDESHOW));
+
+        //System.out.println("filename: " + jPhotoFrame.show.panel.getPhoto().getFullOriginalName() );
+
+        String firstFile = jPhotoFrame.show.panel.getPhoto().getFullOriginalName();
+
+        assertEquals(firstFile, files[0]);
+
+        Thread.sleep(50);
+
+        String secondFile = jPhotoFrame.show.panel.getPhoto().getFullOriginalName();
+
+        assertNotEquals(secondFile,files[1]);
+
+        Thread.sleep(450);
+
+        secondFile = jPhotoFrame.show.panel.getPhoto().getFullOriginalName();
+
+        assertEquals(secondFile, files[1]);
+
+        //System.out.println("filename: " + jPhotoFrame.show.panel.getPhoto().getFullOriginalName() );
+
+    }
 
 }

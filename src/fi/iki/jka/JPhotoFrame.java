@@ -255,14 +255,14 @@ public class JPhotoFrame extends JFrame
 
 
 
-    public void slideShow() {
+    public void slideShow(int interval) {
 
 
         if (photos.getSize() > 0) {
             showsImage = true;
 
 
-            show = new JPhotoShow(photos, 5000, list);
+            show = new JPhotoShow(photos, interval, list);
             show.setVisible(true);
         } else
             JOptionPane.showMessageDialog(this, "No photos to show!",
@@ -610,19 +610,17 @@ public class JPhotoFrame extends JFrame
 
 
         else if (cmd.equals(JPhotoMenu.A_SLIDESHOW)) {
-            slideShow();
+            slideShow(5000);
 
-            /*
-            if (photos.getSize()>0) {
-                JPhotoShow show = new JPhotoShow(photos, 5000, list);
-                show.setVisible(true);
-            }
-            else
-                JOptionPane.showMessageDialog(this, "No photos to show!",
-                                              APP_NAME, JOptionPane.ERROR_MESSAGE);
-
-        */
         }
+
+        else if (cmd.equals(JPhotoMenu.A_QUICK_SLIDESHOW)) {
+            slideShow(500);
+
+        }
+
+
+
 
         else if (cmd.equals(JPhotoMenu.A_HELP)) {
             displayHelp();

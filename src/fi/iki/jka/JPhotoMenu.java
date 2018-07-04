@@ -55,7 +55,10 @@ public class JPhotoMenu {
     public static String A_FULLVIEW = "Show Fullscreen";
     public static String A_SHOWEXIF = "Exif information...";
     public static String A_SLIDESHOW = "Start Slideshow";
-    
+
+    public static String A_QUICK_SLIDESHOW = "Start Quick Slideshow";
+
+
     public static String A_HELP = "Contents...";
     public static String A_ABOUT = "About...";
 
@@ -159,7 +162,10 @@ public class JPhotoMenu {
             KeyStroke.getKeyStroke(KeyEvent.VK_E, ActionEvent.CTRL_MASK) );
         add(menu, A_SLIDESHOW, KeyEvent.VK_S);
 
-        
+        add(menu, A_QUICK_SLIDESHOW, KeyEvent.VK_S);
+
+
+
         menu = new JMenu(new JPhotoAction(listener, "Help", KeyEvent.VK_H));
         menuBar.add(menu);
         add(menu, A_HELP, KeyEvent.VK_C,
