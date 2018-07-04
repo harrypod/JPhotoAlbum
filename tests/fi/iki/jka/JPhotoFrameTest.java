@@ -8,14 +8,21 @@ import static org.hamcrest.CoreMatchers.equalTo;
 import static org.junit.Assert.*;
 
 public class JPhotoFrameTest {
+    int intervalUsed = 0;
+
     @Test
     public void showsImage() throws Exception {
         String files[]= new String[2];
         files[0] = "/home/APE/ape11/JPhotoAlbum/web/JPhotoAlbum.jpg";
         files[1] = "/home/APE/ape11/JPhotoAlbum/web/JPhotoAlbum2.jpg";
-        JPhotoFrame jPhotoFrame = new JPhotoFrame(null, files);
+        JPhotoFrame jPhotoFrame = new JPhotoFrame(null, files){
+            @Override
+            public void slideShow(int interval) {
+                intervalUsed = interval;
+            }
+        };
         jPhotoFrame.actionPerformed(new ActionEvent(jPhotoFrame, 0, JPhotoMenu.A_SLIDESHOW));
-        assertEquals(jPhotoFrame.showsImage, true);
+        assertEquals(5000, intervalUsed);
         assertEquals(jPhotoFrame.photos.getSize(), 2);
     }
 

@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41e6887f-7d80-4725-8376-61ed8b7b6ff7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/fi/iki/jka/JPhotoFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fi/iki/jka/JPhotoFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/fi/iki/jka/JPhotoFrameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/fi/iki/jka/JPhotoFrameTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -18,8 +17,8 @@
       <file leaf-file-name="JPhotoFrame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/fi/iki/jka/JPhotoFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="621" lean-forward="true" selection-start-line="621" selection-end-line="621" />
+            <state relative-caret-position="249">
+              <caret line="264" column="12" selection-start-line="264" selection-start-column="12" selection-end-line="264" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -54,8 +53,12 @@
       <file leaf-file-name="JPhotoFrameTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/fi/iki/jka/JPhotoFrameTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="51" selection-start-line="51" selection-end-line="51" />
+            <state relative-caret-position="418">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+              <folding>
+                <element signature="e#599#600#0" expanded="true" />
+                <element signature="e#642#643#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -187,7 +190,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.JPhotoFrameTest.showsOtherImageAfterQuickInterval">
+  <component name="RunManager" selected="JUnit.JPhotoFrameTest.showsImage">
     <configuration name="JPhotoFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="fi.iki.jka.JPhotoFrame" />
       <module name="JPhotoAlbum" />
@@ -341,11 +344,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JPhotoFrameTest.showsImage" />
+        <item itemvalue="JUnit.JPhotoFrameTest" />
         <item itemvalue="JUnit.JPhotoFrameTest.showsOtherImageAfterQuickInterval" />
         <item itemvalue="JUnit.JPhotoFrameTest.showsOtherImageAfterInterval" />
-        <item itemvalue="JUnit.JPhotoFrameTest" />
         <item itemvalue="Application.JPhotoFrame" />
-        <item itemvalue="JUnit.JPhotoFrameTest.showsImage" />
       </list>
     </recent_temporary>
   </component>
@@ -363,15 +366,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="JPhotoFrameTest_showsOtherImageAfterInterval - 2018.07.04 at 10h 58m 26s.xml">
-      <configuration name="JPhotoFrameTest.showsOtherImageAfterInterval" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JPhotoFrameTest_showsOtherImageAfterInterval - 2018.07.04 at 11h 00m 43s.xml">
-      <configuration name="JPhotoFrameTest.showsOtherImageAfterInterval" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="JPhotoFrameTest_showsOtherImageAfterInterval - 2018.07.04 at 11h 01m 29s.xml">
-      <configuration name="JPhotoFrameTest.showsOtherImageAfterInterval" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="JPhotoFrameTest_showsOtherImageAfterInterval - 2018.07.04 at 11h 02m 56s.xml">
       <configuration name="JPhotoFrameTest.showsOtherImageAfterInterval" configurationId="JUnit" />
     </history-entry>
@@ -392,6 +386,15 @@
     </history-entry>
     <history-entry file="JPhotoFrameTest_showsOtherImageAfterQuickInterval - 2018.07.04 at 11h 23m 59s.xml">
       <configuration name="JPhotoFrameTest.showsOtherImageAfterQuickInterval" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JPhotoFrameTest - 2018.07.04 at 11h 28m 31s.xml">
+      <configuration name="JPhotoFrameTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JPhotoFrameTest_showsImage - 2018.07.04 at 11h 33m 16s.xml">
+      <configuration name="JPhotoFrameTest.showsImage" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JPhotoFrameTest_showsImage - 2018.07.04 at 11h 38m 16s.xml">
+      <configuration name="JPhotoFrameTest.showsImage" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -493,15 +496,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fi/iki/jka/JPhotoFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="621" lean-forward="true" selection-start-line="621" selection-end-line="621" />
+        <state relative-caret-position="249">
+          <caret line="264" column="12" selection-start-line="264" selection-start-column="12" selection-end-line="264" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/fi/iki/jka/JPhotoFrameTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        <state relative-caret-position="418">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="e#599#600#0" expanded="true" />
+            <element signature="e#642#643#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
