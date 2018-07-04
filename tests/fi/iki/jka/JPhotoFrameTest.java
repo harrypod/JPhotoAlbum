@@ -29,10 +29,12 @@ public class JPhotoFrameTest {
         jPhotoFrame.actionPerformed(new ActionEvent(jPhotoFrame, 0, JPhotoMenu.A_SLIDESHOW));
         String firstFile = jPhotoFrame.show.panel.getPhoto().getFullOriginalName();
         assertEquals(firstFile, files[0]);
-        Thread.sleep(500);
+        int firstSleep = jPhotoFrame.INTERVAL / 10;
+        int secondSleep = jPhotoFrame.INTERVAL - firstSleep;
+        Thread.sleep(firstSleep);
         String secondFile = jPhotoFrame.show.panel.getPhoto().getFullOriginalName();
         assertNotEquals(secondFile,files[1]);
-        Thread.sleep(4500);
+        Thread.sleep(secondSleep);
         secondFile = jPhotoFrame.show.panel.getPhoto().getFullOriginalName();
         assertEquals(secondFile, files[1]);
     }
@@ -47,10 +49,12 @@ public class JPhotoFrameTest {
         jPhotoFrame.actionPerformed(new ActionEvent(jPhotoFrame, 0, JPhotoMenu.A_QUICK_SLIDESHOW));
         String firstFile = jPhotoFrame.show.panel.getPhoto().getFullOriginalName();
         assertEquals(firstFile, files[0]);
-        Thread.sleep(50);
+        int firstSleep = jPhotoFrame.QUICK_INTERVAL / 10;
+        int secondSleep = jPhotoFrame.QUICK_INTERVAL - firstSleep;
+        Thread.sleep(firstSleep);
         String secondFile = jPhotoFrame.show.panel.getPhoto().getFullOriginalName();
         assertNotEquals(secondFile,files[1]);
-        Thread.sleep(450);
+        Thread.sleep(secondSleep);
         secondFile = jPhotoFrame.show.panel.getPhoto().getFullOriginalName();
         assertEquals(secondFile, files[1]);
     }

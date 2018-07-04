@@ -100,6 +100,9 @@ public class JPhotoFrame extends JFrame
     
     protected static HashMap allFrames = new HashMap();
 
+    final static int INTERVAL = 5000;
+
+    final static int QUICK_INTERVAL = 500;
 
     public boolean showsImage = false;
 
@@ -610,12 +613,12 @@ public class JPhotoFrame extends JFrame
 
 
         else if (cmd.equals(JPhotoMenu.A_SLIDESHOW)) {
-            slideShow(5000);
+            slideShow(INTERVAL);
 
         }
 
         else if (cmd.equals(JPhotoMenu.A_QUICK_SLIDESHOW)) {
-            slideShow(500);
+            slideShow(QUICK_INTERVAL);
 
         }
 
